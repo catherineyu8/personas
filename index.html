@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- metadata tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>csci 1300 - personas and storyboarding</title>
+		<!-- import CSS styles -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<!-- page content goes into <body> -->
+	<body>
+		<div id="introContainer"></div>
+		<script>
+			fetch("sections/intro.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("introContainer").innerHTML = data;
+				})
+				.catch((error) => console.error("Error loading intro:", error));
+		</script>
+
+		<div id="observationsInterviewsContainer"></div>
+		<script>
+			fetch("sections/observations_interviews.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById(
+						"observationsInterviewsContainer"
+					).innerHTML = data;
+				})
+				.catch((error) =>
+					console.error(
+						"Error loading observations and interviews:",
+						error
+					)
+				);
+		</script>
+
+		<div id="personasContainer"></div>
+		<script>
+			fetch("sections/personas.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("personasContainer").innerHTML =
+						data;
+				})
+				.catch((error) =>
+					console.error("Error loading personas:", error)
+				);
+		</script>
+
+		<div id="storyboardContainer"></div>
+		<script>
+			fetch("sections/storyboard.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("storyboardContainer").innerHTML =
+						data;
+				})
+				.catch((error) =>
+					console.error("Error loading storyboard:", error)
+				);
+		</script>
+	</body>
+</html>
