@@ -1,5 +1,14 @@
 body {
 	font-family: "Trebuchet MS", sans-serif;
-	background-color: #c0e8eb;
+	color: #553922; /* text color */
+	background-color: #f1ece2;
 	padding: 120px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.light-text {
+	color: #875c35;
 }
