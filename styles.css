@@ -33,7 +33,6 @@ img {
 	flex: 1; /* Makes each column take equal space */
 	padding: 10px;
 	/* border: 1px solid black; */
-	/* align-items: center; Centers items horizontally */
 }
 
 /* table styling */
@@ -44,9 +43,14 @@ table {
 }
 th {
 	text-align: center;
-	color: #2e2ca9;
 }
 td {
 	border: 1px solid;
 	/* padding: 10px; */
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

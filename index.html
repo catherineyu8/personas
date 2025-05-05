@@ -62,5 +62,18 @@
 					console.error("Error loading storyboard:", error)
 				);
 		</script>
+
+		<div id="reflectionContainer"></div>
+		<script>
+			fetch("sections/reflection.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.getElementById("reflectionContainer").innerHTML =
+						data;
+				})
+				.catch((error) =>
+					console.error("Error loading reflection:", error)
+				);
+		</script>
 	</body>
 </html>
